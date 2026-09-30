@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA | Maquillaje de Lujo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{serif:['"Cormorant Garamond"','serif'],sans:['"Plus Jakarta Sans"','sans-serif']},colors:{gold:{300:'#E5C992',400:'#D4AF37',500:'#C59B27'},rose:{300:'#C99E93',800:'#4A2A27'},lux:{black:'#080808',dark:'#121212',card:'#181818',nude:'#EFE7E1'}}}}}
+</script>
+<style>
+::-webkit-scrollbar{width:7px}::-webkit-scrollbar-track{background:#080808}::-webkit-scrollbar-thumb{background:#C99E93;border-radius:4px}
+.gold-gradient-text{background:linear-gradient(135deg,#FFF5E1,#D4AF37,#E2C2B9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.rose-gold-bg{background:linear-gradient(135deg,#D4AF37,#C99E93)}
+.glass-panel{background:rgba(18,18,18,.88);backdrop-filter:blur(14px)}
+.card-glow:hover{box-shadow:0 12px 35px -10px rgba(212,175,55,.25);border-color:rgba(212,175,55,.45)}
+</style>
+</head>
+<body class="bg-lux-black text-lux-nude font-sans antialiased">
+<div class="bg-gradient-to-r from-lux-dark via-rose-800 to-lux-dark text-center text-[11px] tracking-widest py-2 px-4 border-b border-gold-400/20 uppercase font-medium text-gold-300">
+✨ Envío VIP gratis en pedidos elegibles | Compra segura
+</div>
+
+<nav class="sticky top-0 z-40 glass-panel border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<button id="mobile-menu-btn" class="md:hidden text-lux-nude p-2"><i class="fa-solid fa-bars text-xl"></i></button>
+<div class="flex-1 text-center md:text-left">
+<a href="#" class="font-serif text-3xl font-bold tracking-[0.25em] gold-gradient-text uppercase">A U R A</a>
+</div>
+<div class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-300">
+<a href="#catalogo" class="hover:text-gold-300">Catálogo</a><a href="#bestsellers" class="hover:text-gold-300">Best Sellers</a><a href="#experiencia" class="hover:text-gold-300">Experiencia VIP</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative hidden sm:block"><input id="search-input" type="text" placeholder="Buscar producto..." class="bg-lux-card border border-gray-800 rounded-full py-2 pl-9 pr-4 text-xs w-48 focus:w-64 transition-all"><i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-gray-400 text-xs"></i></div>
+<button id="cart-btn" class="relative p-2 hover:text-gold-300"><i class="fa-solid fa-bag-shopping text-xl"></i><span id="cart-count" class="bg-rose-300 text-lux-black font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center absolute -top-1 -right-1">0</span></button>
+</div>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-lux-dark border-b border-white/10 px-4 py-4 space-y-3">
+<input id="mobile-search-input" type="text" placeholder="Buscar producto o marca..." class="w-full bg-lux-card border border-gray-800 rounded-full py-2 px-4 text-xs">
+<a href="#catalogo" class="block text-xs uppercase tracking-wider">Catálogo</a><a href="#bestsellers" class="block text-xs uppercase tracking-wider">Best Sellers</a><a href="#experiencia" class="block text-xs uppercase tracking-wider">Experiencia VIP</a>
+</div>
+</nav>
+
+<header class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 opacity-40"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover" alt="Maquillaje"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-lux-black via-lux-black/70 to-transparent"></div>
+<div class="relative z-10 max-w-5xl mx-auto text-center px-4 py-16">
+<span class="inline-block border border-gold-400/40 bg-gold-400/10 text-gold-300 px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.2em] mb-6">Haute Beauté Exclusivité</span>
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-white leading-tight mb-6">Los iconos más deseados de <span class="gold-gradient-text italic font-normal">Dior, Chanel & Charlotte Tilbury</span></h1>
+<p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto mb-8">Descubre productos de maquillaje seleccionados y añádelos a tu bolsa para comprar.</p>
+<a href="#catalogo" class="inline-block px-9 py-4 rose-gold-bg text-lux-black font-bold text-xs uppercase tracking-widest rounded-full hover:scale-105 transition">Comprar ahora</a>
+</div>
+</header>
+
+<section class="py-8 border-y border-white/10 bg-lux-dark/60">
+<div class="max-w-7xl mx-auto px-4"><p class="text-center text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-6">Marcas</p>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center text-center">
+<button onclick="setFilter('Dior')" class="font-serif text-2xl tracking-[0.2em] hover:text-gold-300">DIOR</button>
+<button onclick="setFilter('Charlotte Tilbury')" class="font-serif text-lg tracking-widest hover:text-gold-300">CHARLOTTE TILBURY</button>
+<button onclick="setFilter('Chanel')" class="font-serif text-2xl tracking-[0.2em] hover:text-gold-300">CHANEL</button>
+<button onclick="setFilter('Rare Beauty')" class="font-bold text-base tracking-widest hover:text-gold-300">RARE BEAUTY</button>
+<button onclick="setFilter('Make Up For Ever')" class="font-semibold text-xs tracking-widest hover:text-gold-300">MAKE UP FOR EVER</button>
+</div></div>
+</section>
+
+<section id="catalogo" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+<div><span class="text-xs uppercase tracking-[0.2em] text-rose-300 font-semibold">Curaduría</span><h2 class="text-3xl sm:text-5xl font-serif font-bold text-white mt-1">Catálogo Exclusivo</h2></div>
+<div id="filter-container" class="flex flex-wrap gap-2"></div>
+</div>
+<div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+</section>
+
+<section id="bestsellers" class="py-12 bg-lux-dark border-y border-white/10">
+<div class="max-w-7xl mx-auto px-4 text-center"><h2 class="text-3xl font-serif text-white mb-3">Compra con confianza</h2><p class="text-gray-400 text-sm">Puedes revisar cada producto, elegir cantidad y agregarlo a la bolsa.</p></div>
+</section>
+
+<section id="experiencia" class="py-20 bg-gradient-to-r from-lux-dark via-rose-800/20 to-lux-dark border-y border-gold-400/20">
+<div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2"><span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">El Ritual AURA</span><h2 class="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight mt-2">Experiencia de regalo</h2><p class="text-gray-300 mt-6 leading-relaxed">Empaque elegante y experiencia de compra pensada para regalar.</p></div>
+<div class="lg:w-1/2"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1000&auto=format&fit=crop" class="w-full h-80 object-cover rounded-2xl border border-gold-400/30" alt="Caja de regalo"></div>
+</div></section>
+
+<div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+<div id="cart-backdrop" class="absolute inset-0 bg-black/80"></div>
+<div class="absolute right-0 top-0 h-full w-full max-w-md bg-lux-dark border-l border-gray-800 flex flex-col">
+<div class="p-6 border-b border-gray-800 flex justify-between"><h3 class="font-serif text-xl font-bold text-white">Bolsa de compras</h3><button id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button></div>
+<div id="cart-items-container" class="p-6 flex-1 overflow-y-auto space-y-4"></div>
+<div class="p-6 border-t border-gray-800 bg-lux-card">
+<div class="flex justify-between text-sm mb-4"><span>Total</span><span id="cart-total" class="font-serif text-lg text-gold-300">$0.00 USD</span></div>
+<button id="checkout-btn" class="w-full py-4 rose-gold-bg text-lux-black font-bold text-xs uppercase tracking-widest rounded-full">Comprar ahora</button>
+<p class="text-[10px] text-gray-500 mt-3 text-center">El botón abre el pago seguro configurado en tu comercio.</p>
+</div></div></div>
+
+<div id="product-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+<div id="modal-backdrop" class="absolute inset-0 bg-black/85"></div>
+<div class="relative bg-lux-card border border-gold-400/30 rounded-3xl max-w-3xl w-full p-6 z-10 max-h-[90vh] overflow-y-auto">
+<button id="close-modal-btn" class="absolute top-4 right-4 w-8 h-8 bg-lux-dark rounded-full"><i class="fa-solid fa-xmark"></i></button>
+<div id="modal-content"></div>
+</div></div>
+
+<footer class="bg-lux-dark border-t border-gray-800 py-12 text-xs text-gray-400">
+<div class="max-w-7xl mx-auto px-4 text-center"><span class="font-serif text-2xl font-bold gold-gradient-text tracking-widest">AURA</span><p class="mt-3">Portal de cosmética de lujo.</p></div>
+</footer>
+
+<script>
+const products=[
+{id:1,brand:'Dior',name:'Dior Addict Lip Maximizer',price:48,image:'https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=900&auto=format&fit=crop',desc:'Brillo labial hidratante con acabado voluminoso.'},
+{id:2,brand:'Charlotte Tilbury',name:'Hollywood Flawless Filter',price:49,image:'https://images.unsplash.com/photo-1631214524020-7e18db9a8c6d?q=80&w=900&auto=format&fit=crop',desc:'Iluminador de efecto luminoso para rostro.'},
+{id:3,brand:'Chanel',name:'Chanel Rouge Allure',price:55,image:'https://images.unsplash.com/photo-1586495778361-9c4f6b7e1d5a?q=80&w=900&auto=format&fit=crop',desc:'Labial elegante de acabado intenso.'},
+{id:4,brand:'Rare Beauty',name:'Soft Pinch Liquid Blush',price:23,image:'https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=900&auto=format&fit=crop',desc:'Rubor líquido de alta pigmentación.'},
+{id:5,brand:'Make Up For Ever',name:'HD Skin Foundation',price:47,image:'https://images.unsplash.com/photo-1631730486572-226d1d2f5d2f?q=80&w=900&auto=format&fit=crop',desc:'Base de maquillaje de acabado natural.'},
+{id:6,brand:'Dior',name:'Dior Forever Skin Correct',price:40,image:'https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=900&auto=format&fit=crop',desc:'Corrector de larga duración.'},
+{id:7,brand:'Charlotte Tilbury',name:'Pillow Talk Lipstick',price:35,image:'https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=900&auto=format&fit=crop',desc:'Labial icónico para un acabado sofisticado.'},
+{id:8,brand:'Chanel',name:'Chanel Le Rouge',price:58,image:'https://images.unsplash.com/photo-1619451334792-150fd785ee74?q=80&w=900&auto=format&fit=crop',desc:'Color intenso y elegante.'}
+];
+
+let cart=JSON.parse(localStorage.getItem('auraCart')||'[]'), activeFilter='all';
+
+function money(n){return '$'+n.toFixed(2)+' USD'}
+function save(){localStorage.setItem('auraCart',JSON.stringify(cart))}
+function setFilter(f){activeFilter=f;renderFilters();renderProducts();document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})}
+window.setFilter=setFilter;
+
+function renderFilters(){
+const brands=['all','Dior','Charlotte Tilbury','Chanel','Rare Beauty','Make Up For Ever'];
+document.getElementById('filter-container').innerHTML=brands.map(b=>`<button onclick="setFilter('${b}')" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider border ${activeFilter===b?'border-gold-400 bg-gold-400 text-lux-black':'border-gray-800 bg-lux-card text-gray-300'}">${b==='all'?'Todas':b}</button>`).join('');
+}
+function renderProducts(){
+const q=(document.getElementById('search-input').value||document.getElementById('mobile-search-input').value||'').toLowerCase();
+const list=products.filter(p=>(activeFilter==='all'||p.brand===activeFilter)&&(!q||`${p.name} ${p.brand}`.toLowerCase().includes(q)));
+document.getElementById('products-grid').innerHTML=list.map(p=>`
+<article class="bg-lux-card border border-gray-800 rounded-2xl overflow-hidden card-glow transition">
+<img src="${p.image}" alt="${p.name}" class="w-full h-64 object-cover cursor-pointer" onclick="openProduct(${p.id})">
+<div class="p-5">
+<span class="text-[10px] uppercase tracking-widest text-gold-300">${p.brand}</span>
+<h3 class="text-lg font-serif font-bold text-white mt-1">${p.name}</h3>
+<p class="text-xs text-gray-400 mt-2 h-8">${p.desc}</p>
+<div class="flex justify-between items-center mt-5"><span class="font-serif text-xl text-white">${money(p.price)}</span><button onclick="addToCart(${p.id})" class="px-4 py-2 rose-gold-bg text-lux-black rounded-full text-[10px] font-bold uppercase tracking-wider">Añadir</button></div>
+<button onclick="openProduct(${p.id})" class="w-full mt-3 py-2 border border-gray-700 rounded-full text-xs hover:border-gold-400">Ver producto</button>
+</div></article>`).join('')||'<p class="text-gray-400 col-span-full text-center">No encontramos productos.</p>';
+}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});save();renderCart();openCart()}
+window.addToCart=addToCart;
+function changeQty(id,d){const i=cart.find(x=>x.id===id);if(!i)return;i.qty+=d;if(i.qty<=0)cart=cart.filter(x=>x.id!==id);save();renderCart()}
+window.changeQty=changeQty;
+function renderCart(){
+document.getElementById('cart-count').textContent=cart.reduce((a,x)=>a+x.qty,0);
+const total=cart.reduce((a,x)=>{const p=products.find(p=>p.id===x.id);return a+p.price*x.qty},0);
+document.getElementById('cart-total').textContent=money(total);
+document.getElementById('cart-items-container').innerHTML=cart.length?cart.map(x=>{const p=products.find(p=>p.id===x.id);return `<div class="flex gap-3 border-b border-gray-800 pb-4"><img src="${p.image}" class="w-20 h-20 object-cover rounded-lg"><div class="flex-1"><p class="text-white text-sm">${p.name}</p><p class="text-gold-300 text-sm">${money(p.price)}</p><div class="flex items-center gap-3 mt-2"><button onclick="changeQty(${p.id},-1)" class="w-7 h-7 border rounded-full">−</button><span>${x.qty}</span><button onclick="changeQty(${p.id},1)" class="w-7 h-7 border rounded-full">+</button></div></div></div>`}).join(''):'<p class="text-gray-500 text-sm text-center py-10">Tu bolsa está vacía.</p>';
+}
+function openCart(){document.getElementById('cart-drawer').classList.remove('hidden')}
+function closeCart(){document.getElementById('cart-drawer').classList.add('hidden')}
+function openProduct(id){const p=products.find(x=>x.id===id);document.getElementById('modal-content').innerHTML=`<div class="grid md:grid-cols-2 gap-8 items-center"><img src="${p.image}" class="w-full h-80 object-cover rounded-2xl"><div><span class="text-xs uppercase tracking-widest text-gold-300">${p.brand}</span><h2 class="text-3xl font-serif font-bold text-white mt-2">${p.name}</h2><p class="text-gray-400 mt-4">${p.desc}</p><p class="text-2xl font-serif text-gold-300 mt-6">${money(p.price)}</p><button onclick="addToCart(${p.id})" class="w-full mt-6 py-4 rose-gold-bg text-lux-black font-bold rounded-full">Añadir a la bolsa</button></div></div>`;document.getElementById('product-modal').classList.remove('hidden');document.getElementById('product-modal').classList.add('flex')}
+window.openProduct=openProduct;
+
+document.getElementById('cart-btn').onclick=openCart;document.getElementById('close-cart-btn').onclick=closeCart;document.getElementById('cart-backdrop').onclick=closeCart;
+document.getElementById('close-modal-btn').onclick=()=>document.getElementById('product-modal').classList.add('hidden');
+document.getElementById('modal-backdrop').onclick=()=>document.getElementById('product-modal').classList.add('hidden');
+document.getElementById('mobile-menu-btn').onclick=()=>document.getElementById('mobile-menu').classList.toggle('hidden');
+document.getElementById('search-input').oninput=renderProducts;document.getElementById('mobile-search-input').oninput=renderProducts;
+
+document.getElementById('checkout-btn').onclick=()=>{
+if(!cart.length){alert('Tu bolsa está vacía.');return}
+const total=cart.reduce((a,x)=>a+products.find(p=>p.id===x.id).price*x.qty,0);
+const lines=cart.map(x=>{const p=products.find(p=>p.id===x.id);return `${p.name} x${x.qty}`}).join(', ');
+const message=encodeURIComponent(`Hola AURA, quiero realizar este pedido: ${lines}. Total: ${money(total)}. ¿Cómo puedo completar el pago?`);
+window.open(`https://wa.me/?text=${message}`,'_blank');
+};
+
+renderFilters();renderProducts();renderCart();
+</script>
+</body>
+</html>
